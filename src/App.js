@@ -14,7 +14,8 @@ function App() {
 
 	async function handleAddRepository() {
 		const newProject = {
-			title: 'Desafio React',
+      id:'123',
+			title: 'Desafio ReactJS',
 			url: 'https://github.com/josepholiveira',
 			techs: ["React", "Node.js"],
 		};
