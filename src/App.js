@@ -14,10 +14,10 @@ function App() {
 
 	async function handleAddRepository() {
 		const newProject = {
-      id:'123',
+			id: '123',
 			title: 'Desafio ReactJS',
 			url: 'https://github.com/josepholiveira',
-			techs: ["React", "Node.js"],
+			techs: ['React', 'Node.js'],
 		};
 
 		await api.post('repositories', newProject);
@@ -26,10 +26,10 @@ function App() {
 	}
 
 	async function handleRemoveRepository(id) {
-    await api.delete(`repositories/${id}`);
-    
-    const newProjects = projects.filter(project => project.id !== id);
-    setProjects(newProjects)
+		await api.delete(`repositories/${id}`);
+
+		const newProjects = projects.filter((project) => project.id !== id);
+		setProjects(newProjects);
 	}
 
 	return (
